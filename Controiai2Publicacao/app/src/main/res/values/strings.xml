@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">Constróiaí?</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tela2">Tela2</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="invitation_title">titulo</string>
+    <string name="invitation_message">mensagem</string>
+    <string name="invitation_deep_link">https://play.google.com/store/apps/details?id=com.app.matheus.controiai2</string>
+    <string name="usuario">       Usuario       </string>
+    <string name="profissional">   Profissional   </string>
+
+    <string name="registrar">Registrar</string>
+
+    <string name="facebook_app_id">335523983470158</string>
+    <string name="fb_login_protocol_scheme">335523983470158</string>
+
+    <string name="title_activity_entrar">Entrar</string>
+    <string name="title_activity_registrar">Registrar</string>
+    <string name="title_activity_profissao">Profissao</string>
+    <string name="title_activity_profissaoGoogle">ProfissaoGoogle</string>
+    <string name="title_activity_busca">Busca</string>
+    <string name="title_activity_arquitetos">Arquitetos</string>
+    <string name="title_activity_carpinteiro">Carpinteiro</string>
+    <string name="title_activity_engenheiro_civil">EngenheiroCivil</string>
+    <string name="title_activity_eletricistas">Eletricistas</string>
+    <string name="title_activity_transition">TransitionActivity</string>
+    <string name="title_activity_pintor">Pintor</string>
+    <string name="app_label">Constroi Ai?</string>
+    <string name="title_activity_pedreiro">Pedreiro</string>
+    <string name="title_activity_inicio">Inicio</string>
+    <string name="title_activity_todos_os_profissionais">TodosOsProfissionais</string>
+    <string name="title_activity_perfil_do_usuario">PerfilDoUsuario</string>
+    <string name="title_activity_car">CarActivity</string>
+    <string name="title_activity_profissional">ProfissionalActivity</string>
+    <string name="title_activity_qual">Qual</string>
+    <string name="title_activity_entrada">Entrada</string>
+    <string name="title_activity_profissional_categorias">ProfissionalCategorias</string>
+    <string name="title_activity_usuario_perfil">UsuarioPerfil</string>
+    <string name="search_hint">Buscar Profissionais</string>
+    <string name="title_activity_searchable">SearchableActivity</string>
+    <string name="title_activity_usuario_fragment">UsuarioFragment</string>
+    <string name="title_activity_favoritos_fragment">FavoritosFragment</string>
+    <string name="title_activity_profissional_perfil">ProfissionalPerfil</string>
+    <string name="title_activity_configuracoes">ConfiguracoesActivity</string>
+    <string name="experiencia">Digite sua experiencia na sua area de atuacao</string>
+    <string name="tempo">Digite os seus dias disponiveis</string>
+    <string name="cursos">Digite sobre seus cursos</string>
+    <string name="outros">Digite alguma coisa que voce acha importante</string>
+    <string name="country_prompt">Escolha a primeira profissão</string>
+    <string name="country_prompt2">Escolha a segunda profissão</string>
+    <string name="country_prompt3">Escolha a terceira profissão</string>
+    <string-array name="profissionais_arrays">
+        <item>Nenhuma profissão</item>
+        <item>Grafiteiro</item>
+        <item>Automação Residencial</item>
+        <item>Chaveiro</item>
+        <item>Decorador</item>
+        <item>Dedetizador</item>
+        <item>Desentupidor</item>
+        <item>Limpeza pós obra</item>
+        <item>Mudanças</item>
+        <item>Segurança eletrônica</item>
+        <item>Arquiteto</item>
+        <item>Carpinteiro</item>
+        <item>Engenheiro civil</item>
+        <item>Eletricista</item>
+        <item>Pintor</item>
+        <item>Pedreiro</item>
+        <item>Encanador</item>
+        <item>Vidraceiro</item>
+        <item>Funileiro</item>
+        <item>Serralheiro de ferro</item>
+        <item>Mestre de obras</item>
+        <item>Gesseiro</item>
+        <item>Jardineiro</item>
+        <item>Paisagista</item>
+        <item>Piscineiro</item>
+    </string-array>
+    <string-array name="pedreiro1_arrays">
+        <item>Construçao</item>
+        <item>Reformas</item>
+        <item>Instalaçoes</item>
+        <item>Trocas</item>
+        <item>Outros</item>
+    </string-array>
+    <string-array name="automacao1_arrays">
+        <item>Conserto/Manutenção</item>
+        <item>Instalação</item>
+        <item>Outros</item>
+    </string-array>
+    <string-array name="chaveiro1_arrays">
+        <item>Chave codificada</item>
+        <item>Cópia de chave</item>
+        <item>Troca de fechadura</item>
+        <item>Outros</item>
+    </string-array>
+    <string-array name="chaveiro2_arrays">
+        <item>Automóvel</item>
+        <item>Residência</item>
+        <item>Cofre</item>
+        <item>Portão</item>
+        <item>Outro</item>
+    </string-array>
+
+    <string-array name="pedreiro2_arrays">
+        <item>Casa</item>
+        <item>Apartamentos</item>
+        <item>Comercial</item>
+        <item>Lote de terreno</item>
+        <item>Outros</item>
+    </string-array>
+    <string-array name="pedreiro3_arrays">
+        <item>O quanto antes </item>
+        <item>Nos próximos 30 dias</item>
+        <item>Nos próximos 3 meses</item>
+        <item>Não tenho certeza</item>
+    </string-array>
+
+    <string-array name="arquiteto1_arrays">
+        <item>Projeto residencial</item>
+        <item>Projeto de local comercial</item>
+        <item>Projeto para interiores</item>
+        <item>Projeto de escritório</item>
+        <item>Laudo técnico</item>
+        <item>Acompanhamento de obra</item>
+        <item>Consultoria</item>
+        <item>Outros prjetos</item>
+    </string-array>
+    <string-array name="arquiteto2_arrays">
+        <item>Construçao em geral</item>
+        <item>Forro</item>
+        <item>Paredes e estruturas</item>
+        <item>Pisos e revestimentos</item>
+        <item>Portas e janelas</item>
+        <item>Telhados e telhas</item>
+        <item>Outros</item>
+    </string-array>
+    <string-array name="arquiteto3_arrays">
+        <item>Casa</item>
+        <item>Apartamentos</item>
+        <item>Comercial</item>
+        <item>Lote de terreno</item>
+        <item>Outros</item>
+    </string-array>
+    <string-array name="arquiteto4_arrays">
+        <item>O quanto antes </item>
+        <item>Nos próximos 30 dias</item>
+        <item>Nos próximos 3 meses</item>
+        <item>Não tenho certeza</item>
+    </string-array>
+    <string name="title_activity_editar_dados">EditarDados</string>
+    <string name="navigation_drawer_open">Navigation Drawer Open</string>
+    <string name="navigation_drawer_close">Navigation Drawer Close</string>
+    <string name="title_activity_escrevendo_problema">EscrevendoProblema</string>
+    <string name="title_activity_profissional_chamadas">ProfissionalChamadas</string>
+    <string name="title_activity_activity_seguidores">ActivitySeguidores</string>
+    <string name="title_activity_seguidores">SeguidoresActivity</string>
+    <string name="title_activity_comprar_tijolos">ComprarTijolos</string>
+    <string name="title_activity_anuncio_user">AnuncioUser</string>
+    <string name="title_activity_criar_anuncio_user">CriarAnuncioUser</string>
+    <string name="title_activity_anuncio_edit">AnuncioEdit</string>
+    <string name="title_activity_anuncios_contratante">AnunciosContratante</string>
+    <string name="title_activity_contratante">ContratanteActivity</string>
+    <string name="title_activity_floating">Floating</string>
+    <string name="title_activity_tipo_anuncio">TipoAnuncio</string>
+    <string name="title_activity_tipo_anuncio2">TipoAnuncio2</string>
+    <string name="title_activity_veja_anuncio">VejaAnuncio</string>
+    <string name="title_activity_pagamentos">PagamentosActivity</string>
+    <string name="title_activity_destaque_fragment">DestaqueFragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_pedidoorcamentoum">Pedidoorcamentoum</string>
+    <string name="title_activity_pedido_orcamentodois">PedidoOrcamentodois</string>
+    <string name="title_activity_pedido_orcamentotres">PedidoOrcamentotres</string>
+    <string name="title_activity_pedido_orcamentoquatro">PedidoOrcamentoquatro</string>
+    <string name="title_activity_pedido_orcamentocinco">PedidoOrcamentocinco</string>
+    <string name="title_activity_pedido_orcamentoseis">PedidoOrcamentoseis</string>
+    <string name="title_activity_pedido_orcamentosete">PedidoOrcamentosete</string>
+    <string name="title_activity_pedido_orcamento_eletricistaum">PedidoOrcamentoEletricistaum
+    </string>
+    <string name="title_activity_pedido_orcamento_eltricistadois">PedidoOrcamentoEltricistadois
+    </string>
+    <string name="title_activity_pedido_orcamento_encanador_um">PedidoOrcamentoEncanadorUm</string>
+    <string name="title_activity_pedido_orcamento_encanador_dois">PedidoOrcamentoEncanadorDois
+    </string>
+    <string name="title_activity_pedido_orcamento_climatizacao_um">PedidoOrcamentoClimatizacaoUm
+    </string>
+    <string name="title_activity_pedido_orcamento_climatizacao_dois">
+        PedidoOrcamentoClimatizacaoDois
+    </string>
+    <string name="title_activity_pedido_orcamento_climatizacao_tres">
+        PedidoOrcamentoClimatizacaoTres
+    </string>
+    <string name="title_activity_pedido_orcamento_climatizacao_quatro">
+        PedidoOrcamentoClimatizacaoQuatro
+    </string>
+    <string name="title_activity_pedido_orcamento_reforma_um">PedidoOrcamentoReformaUm</string>
+    <string name="title_activity_pedido_orcamento_reforma_dois">PedidoOrcamentoReformaDois</string>
+    <string name="title_activity_pedido_orcamento_reforma_tres">PedidoOrcamentoReformaTres</string>
+    <string name="title_activity_pedido_orcamento_fim">PedidoOrcamentoFim</string>
+    <string name="title_activity_prof_verificados">ProfVerificados</string>
+    <string name="title_activity_orcamento_completo">OrcamentoCompleto</string>
+    <string name="title_activity_pedido_orcamento_climatizacao_cinco">
+        PedidoOrcamentoClimatizacaoCinco
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

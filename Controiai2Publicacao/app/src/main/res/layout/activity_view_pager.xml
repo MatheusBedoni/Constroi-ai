@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context="com.app.equipe.controiai2.ViewPager.ViewPager">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slides"
+
+        android:orientation="vertical">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <com.pixelcan.inkpageindicator.InkPageIndicator
+            android:id="@+id/indicator"
+            android:padding="10dip"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            app:dotDiameter="8dp"
+            app:dotGap="8dp"
+            app:animationDuration="320"
+            app:pageIndicatorColor="@android:color/darker_gray"
+            app:currentPageIndicatorColor="@android:color/black"
+            android:layout_above="@+id/button_descr1"
+            />
+
+
+        <Button
+            android:text="Encontrar um profissional"
+            android:background="@color/corbranca"
+            android:textColor="@color/colorPrimarytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="encontrar"
+            android:id="@+id/button_descr2"
+            />
+        <Button
+            android:text="Sou um profissional"
+            android:background="@color/corbranca"
+            android:textColor="@color/colorPrimarytext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="comecar"
+            android:id="@+id/button_descr1"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:visibility="visible"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/profissionais"
+    android:visibility="visible"
+    android:background="@color/corbranca"
+    android:layout_alignParentTop="true"
+    android:layout_toRightOf="@+id/publicidade"
+    android:layout_toEndOf="@+id/publicidade">
+
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/placeholde"
+        android:id="@+id/ivProfissaoFoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+    <!--android:id="@+id/ivProfissaoFoto"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="80dp"-->
+    <!--android:layout_marginRight="6dp"-->
+    <!--fresco:actualImageScaleType="centerCrop"-->
+    <!--fresco:placeholderImage="@drawable/iconegrande"-->
+    <!--fresco:failureImage="@drawable/iconegrande"-->
+    <!--fresco:retryImage="@drawable/iconegrande"/>-->
+    <TextView
+        android:textColor="@color/material_drawer_primary_text"
+        android:layout_toRightOf="@+id/ivProfissaoFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:id = "@+id/tvProfissionalNome"
+        android:paddingRight="16dp"
+        android:layout_marginLeft="10dp"
+        android:text="Manoel Brabosa"
+        android:layout_marginTop="10dp"/>
+
+
+    <View
+        android:id = "@+id/vw_divider8"
+        android:layout_width="match_parent"
+        android:layout_height="1.20dp"
+        android:background="#e0dddd"
+        android:layout_below="@+id/ivProfissaoFoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
+</RelativeLayout>
+

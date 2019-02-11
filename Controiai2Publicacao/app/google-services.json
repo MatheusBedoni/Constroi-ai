@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "242816907278",
+    "firebase_url": "https://constroiai-app.firebaseio.com",
+    "project_id": "constroiai-app",
+    "storage_bucket": "constroiai-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242816907278:android:1665f3e9e004f67c",
+        "android_client_info": {
+          "package_name": "com.app.matheus.controiai2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242816907278-mffqee25q6lfs2mg8279sk0kp0ngibi0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.matheus.controiai2",
+            "certificate_hash": "bde2262d8785960e536b08282ac84f14cdd425c5"
+          }
+        },
+        {
+          "client_id": "242816907278-pfceudlseld3bt6offq6g3130b496sgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm5LUADwRDvOxLRa3EL3_WXET8jVnaZ5E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "242816907278-pfceudlseld3bt6offq6g3130b496sgp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242816907278:android:701c9121d8abd36d",
+        "android_client_info": {
+          "package_name": "com.app.matheus.alfred"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242816907278-pfceudlseld3bt6offq6g3130b496sgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm5LUADwRDvOxLRa3EL3_WXET8jVnaZ5E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:242816907278:android:66a2da0afdf74f51",
+        "android_client_info": {
+          "package_name": "com.app.equipe.controiai2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "242816907278-pfceudlseld3bt6offq6g3130b496sgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm5LUADwRDvOxLRa3EL3_WXET8jVnaZ5E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

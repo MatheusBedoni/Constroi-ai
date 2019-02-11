@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/action_exclui"
+        android:orderInCategory="200"
+        android:title="Excluir anuncio"
+        android:icon ="@drawable/cross_out"
+        app:showAsAction="always"/>
+    <!--<item android:id="@+id/favoritos"-->
+        <!--android:orderInCategory="200"-->
+        <!--android:title="Seus favoritos"-->
+        <!--android:icon ="@drawable/favourites_filled_star_symbol"-->
+        <!--app:showAsAction="always"/>-->
+    <!--<item-->
+        <!--android:id="@+id/faleconosco"-->
+        <!--android:title="Fale conosco"-->
+        <!--android:orderInCategory="200"-->
+        <!--app:showAsAction="never"/>-->
+    <!--<item-->
+
+        <!--android:id="@+id/dicas"-->
+        <!--android:title="Dicas de segurança"-->
+        <!--android:orderInCategory="200"-->
+        <!--app:showAsAction="never"/>-->
+    <!--<item-->
+        <!--android:id="@+id/termo"-->
+        <!--android:title="Termos de uso"-->
+        <!--android:orderInCategory="200"-->
+        <!--app:showAsAction="never"/>-->
+    <!--<item-->
+        <!--android:id="@+id/avalie"-->
+        <!--android:title="Avalie na Googleplay"-->
+        <!--android:orderInCategory="200"-->
+        <!--app:showAsAction="never"/>-->
+    <!--<item-->
+        <!--android:id="@+id/sair"-->
+        <!--android:title="Sair"-->
+        <!--android:orderInCategory="200"-->
+        <!--app:showAsAction="never"/>-->
+
+
+
+</menu>

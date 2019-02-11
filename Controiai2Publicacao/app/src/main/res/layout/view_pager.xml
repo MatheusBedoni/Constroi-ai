@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/corbranca"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView" />
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginRight="6dp"-->
+        <!--fresco:actualImageScaleType="centerCrop"-->
+        <!--fresco:placeholderImage="@drawable/placeholde"-->
+        <!--fresco:failureImage="@drawable/placeholde"-->
+        <!--fresco:retryImage="@drawable/placeholde"/>-->
+
+</LinearLayout>

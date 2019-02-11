@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:onClick="orcamento"
+            android:textColor="@color/material_drawer_primary_icon"
+            android:drawableEnd="@drawable/notepad"
+            android:id="@+id/orcamento"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/txt_vantagem"
+            android:drawableRight="@drawable/notepad" />
+
+        <Button
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:onClick="telefonar"
+            android:textColor="@color/material_drawer_primary_icon"
+            android:drawableEnd="@drawable/phonecall"
+            android:id="@+id/contato"
+            android:layout_weight="1"
+            android:layout_alignBottom="@+id/txt_vantagem"
+            android:drawableRight="@drawable/phonecall" />
+        <Button
+
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:drawableEnd="@drawable/star_"
+            android:textColor="@color/material_drawer_primary_icon"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:onClick="favoritos"
+            android:layout_weight="1"
+            android:id="@+id/button2"
+            android:background="#fff"
+            android:layout_alignBottom="@+id/txt_vantagem"
+            android:drawableRight="@drawable/star" />
+        <Button
+
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/material_drawer_primary_icon"
+            android:textSize="12dp"
+            android:onClick="avaliar"
+            android:drawableEnd="@drawable/like___"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:id="@+id/button3"
+            android:layout_marginRight="40dp"
+            android:layout_alignBottom="@+id/txt_vantagem"
+            android:drawableRight="@drawable/like___" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

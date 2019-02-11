@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/q"
+        android:title="Principal">
+        <menu>
+            <item
+                android:id="@+id/perfil"
+                android:title="Acesse sua conta"
+               />
+            <item
+                android:id="@+id/anunciar"
+                android:title="Torne-se um contratante"
+                />
+    <item
+        android:id="@+id/profissionais"
+        android:title="Torne-se um profissional"
+     />
+
+
+
+            <!--<item-->
+                <!--android:icon="@drawable/global_advertisement"-->
+                <!--android:id="@+id/global_advertisement"-->
+                <!--android:title="Anuncie sua empresa"-->
+                <!--/>-->
+        </menu>
+    </item>
+
+    <item android:title="Informações importantes">
+        <menu>
+            <item
+                android:id="@+id/faleconosco"
+                android:title="Fale conosco" />
+            <item
+                android:id="@+id/dicas"
+                android:title="Dicas de segurança" />
+            <item
+                android:id="@+id/termo"
+                android:title="Termos de uso" />
+            <item
+                android:id="@+id/config"
+                android:title="Configurações" />
+            <item
+                android:id="@+id/sair"
+                android:title="Sair" />
+
+        </menu>
+    </item>
+
+
+
+</menu>

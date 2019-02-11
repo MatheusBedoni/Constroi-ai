@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/publicidade"
+        android:visibility="gone"
+        android:background="@color/corbranca"
+        android:layout_below="@+id/profissionais"
+        android:layout_alignParentLeft="true"
+        >
+
+
+        <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_app"
+        android:id="@+id/ivPublicidadeFoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+        <View
+            android:id = "@+id/vw_divider9"
+            android:layout_width="match_parent"
+            android:layout_height="0.20dp"
+            android:background="#e0dddd"
+            android:layout_below="@+id/button_negativo1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <!--<com.facebook.drawee.view.SimpleDraweeView-->
+            <!--android:id="@+id/ivPublicidadeFoto"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--fresco:actualImageScaleType="centerCrop"-->
+            <!--fresco:placeholderImage="@drawable/iconegrande"-->
+            <!--fresco:failureImage="@drawable/iconegrande"-->
+            <!--fresco:retryImage="@drawable/iconegrande"-->
+            <!--android:layout_alignTop="@+id/tvPublicidadeNome"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:background="@color/colorAccent"
+            android:id="@+id/relativeLayout"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_alignBottom="@+id/vw_divider9"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:textColor="@color/material_drawer_primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:id = "@+id/tvPublicidadeNome"
+            android:paddingRight="16dp"
+            android:text="Anuncie aqui"
+            android:layout_marginTop="9dp"
+
+            android:layout_alignStart="@+id/tvPublicidadeProfissao"
+            android:layout_alignLeft="@+id/tvPublicidadeProfissao" />
+
+        <TextView
+            android:textColor="@color/material_drawer_secondary_text"
+            android:id="@+id/tvPublicidadeProfissao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="13dp"
+            android:textSize="13dp"
+            android:text="Coloque uma promoção de sua empresa"
+            android:layout_marginStart="27dp"
+            android:layout_below="@+id/tvPublicidadeNome"
+            android:layout_toEndOf="@+id/ivPublicidadeFoto"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/ivPublicidadeFoto" />
+        <TextView
+            android:textColor="@color/corbranca"
+            android:id="@+id/tvPublicidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="13dp"
+            android:textSize="13dp"
+            android:background="@color/colorAccent"
+            android:text=" Publicidade"
+            android:layout_above="@+id/vw_divider11"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:text="Confira"
+            style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="registrar"
+            android:textSize="14dp"
+            android:id="@+id/button_confira"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/tvPublicidadeProfissao"
+            android:layout_alignStart="@+id/tvPublicidadeProfissao"
+            android:layout_alignLeft="@+id/tvPublicidadeProfissao" />
+        <View
+            android:id = "@+id/vw_divider11"
+            android:layout_width="match_parent"
+            android:layout_height="0.20dp"
+            android:background="#e0dddd"
+            android:layout_below="@+id/button_confira"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profissionais"
+        android:visibility="visible"
+        android:background="@color/corbranca"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/publicidade"
+        android:layout_toEndOf="@+id/publicidade">
+
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/placeholde"
+        android:id="@+id/ivProfissaoFoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--<com.facebook.drawee.view.SimpleDraweeView-->
+        <!--android:id="@+id/ivProfissaoFoto"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_marginRight="6dp"-->
+        <!--fresco:actualImageScaleType="centerCrop"-->
+        <!--fresco:placeholderImage="@drawable/iconegrande"-->
+        <!--fresco:failureImage="@drawable/iconegrande"-->
+        <!--fresco:retryImage="@drawable/iconegrande"/>-->
+     <TextView
+         android:textColor="@color/material_drawer_primary_text"
+         android:layout_toRightOf="@+id/ivProfissaoFoto"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="13dp"
+         android:id = "@+id/tvProfissionalNome"
+         android:paddingRight="16dp"
+         android:layout_marginLeft="10dp"
+         android:text="Manoel Brabosa"
+         android:layout_marginTop="10dp"/>
+    <TextView
+        android:textColor="@color/material_drawer_secondary_text"
+        android:layout_below="@+id/tvProfissionalNome"
+        android:id="@+id/tvProfissionalProfissao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingRight="13dp"
+        android:textSize="13dp"
+        android:text="Carpinteiro,"
+        android:layout_alignLeft="@+id/tvProfissionalNome"
+        android:layout_alignStart="@+id/tvProfissionalNome" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="4,2"
+        android:visibility="visible"
+        android:id="@+id/tv_votos"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/tvProfissionalProfissao"
+        android:layout_alignLeft="@+id/tvProfissionalProfissao"
+        android:layout_alignStart="@+id/tvProfissionalProfissao" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/estrela"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/tv_votos"
+        android:layout_toRightOf="@+id/tv_votos"
+        android:layout_toEndOf="@+id/tv_votos" />
+
+
+        <View
+        android:id = "@+id/vw_divider8"
+        android:layout_width="match_parent"
+        android:layout_height="0.20dp"
+        android:background="#e0dddd"
+        android:layout_below="@+id/ivProfissaoFoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvProfissionalData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="13dp"
+        android:textStyle="bold"
+        android:textColor="@color/material_drawer_secondary_text"
+        android:textSize="11dp"
+        android:text=" Destaque"
+        android:layout_above="@+id/vw_divider8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView5"
+            android:src="@drawable/vip"
+            android:elevation="4dp"
+            android:visibility="visible"
+            android:layout_alignTop="@+id/tvProfissionalNome"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/imageView4"
+            android:visibility="visible"
+            android:src="@drawable/user_color"
+            android:layout_below="@+id/tvProfissionalProfissao"
+            android:layout_toRightOf="@+id/tv_seguidor"
+            android:layout_toEndOf="@+id/tv_seguidor"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="4,2"
+            android:id="@+id/tv_seguidor"
+            android:textSize="16dp"
+            android:visibility="visible"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignBottom="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

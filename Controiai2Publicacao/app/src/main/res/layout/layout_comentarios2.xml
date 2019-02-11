@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profissionais"
+        android:visibility="visible"
+        android:background="@color/corbranca"
+        xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user_male_black_shape__1_"
+        android:id="@+id/ivProfissaoFoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Maria Gabriela"
+            android:layout_marginTop="10dp"
+            android:id="@+id/nomecomentario"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimarytext"
+            android:textSize="16dp"
+
+            android:layout_toEndOf="@+id/ivProfissaoFoto"
+            android:layout_toRightOf="@+id/ivProfissaoFoto" />
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal"
+            android:layout_below="@+id/nomecomentario"
+            android:layout_toEndOf="@+id/ivProfissaoFoto"
+            android:id="@+id/linearLayout3"
+            android:layout_toRightOf="@+id/ivProfissaoFoto">
+
+        <com.app.equipe.controiai2.RatingBarGitHub.MaterialRatingBar
+            android:id="@+id/library_normal_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:mrb_progressTint="@color/colorAccent"
+            android:stepSize="0.01"
+            android:minHeight="15dp"
+            android:maxHeight="15dp"
+            app:mrb_secondaryProgressTint="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="23/11/2016"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimarytext"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/data"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Otimo"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimarytext"
+            android:id="@+id/titulocomentario"
+            android:textSize="16dp"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignStart="@+id/linearLayout3"
+            android:layout_alignLeft="@+id/linearLayout3" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="A material metaphor is the unifying theory of a rationalized space and a system of motion.The material is grounded in tactile reality, inspired by"
+        android:id="@+id/comentario"
+        android:textColor="@color/colorPrimarytext"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16dp" />
+
+    <View
+        android:id = "@+id/vw_divider8"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/comentario"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+
+
+
+</LinearLayout>

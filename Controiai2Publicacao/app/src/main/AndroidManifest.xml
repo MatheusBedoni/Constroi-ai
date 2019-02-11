@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.equipe.controiai2">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".ConstroiAiApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_agencia"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="Constrói Aí?" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Entrar"
+            android:label="Constrói Aí?"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ViewPager.ViewPager"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registrar"
+            android:label="@string/title_activity_registrar"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Profissao"
+            android:label="@string/title_activity_profissao"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Anonimo.ProfissionalActivity3"
+            android:label="@string/title_activity_profissional"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Profissional.ProfissionalActivity2"
+            android:label="@string/title_activity_profissional"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Profissional.Entrada2"
+            android:label="@string/title_activity_entrada"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity
+            android:name=".ProfissionalCategorias3"
+            android:label="@string/title_activity_profissional_categorias"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".fragments.FavoritosFragment"
+            android:label="@string/title_activity_favoritos_fragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ProfissionalPerfil"
+            android:label="@string/title_activity_profissional_perfil"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".EditarDados"
+            android:label="@string/title_activity_editar_dados"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".editarFotos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfissionalChamadas"
+            android:label="@string/title_activity_profissional_chamadas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <receiver
+            android:name=".auxiliares.BroadcastReceiverAux"
+            android:label="BroadcastReceiverAux"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="ALARME_DISPARADO" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".Service.ServicoTest" />
+
+        <activity
+            android:name=".MudarSenha"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FaleConosco"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FaleConoscoProf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DicasSeguranca"
+            android:screenOrientation="portrait" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Anonimo.EditarCidade" />
+        <activity
+            android:name=".AnuncioEdit"
+            android:label="@string/title_activity_anuncio_edit"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".materiais.MateriaisActivity" />
+        <activity android:name=".materiais.MateriaisActivityUser" />
+        <activity android:name=".materiais.CriarAnuncioMateriais" />
+        <activity android:name=".materiais.MateriaisVerAnuncio" />
+        <activity android:name=".materiais.FerramentaAcitivity" />
+        <activity android:name=".materiais.CriarAnuncioMateriaisUser" />
+        <activity android:name=".materiais.MateriaisVerAnuncioUser" />
+        <activity android:name=".materiais.FerramentaActivityUser" />
+        <activity android:name=".CriarAnuncios" />
+        <activity android:name=".SaberMais" />
+        <activity
+            android:name=".PagamentosActivity"
+            android:label="@string/title_activity_pagamentos"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DestaqueFragment"
+            android:label="@string/title_activity_destaque_fragment"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".fragments.AnunciosFragment" />
+        <activity android:name=".DestaqueRoraima" />
+        <activity android:name=".CodigoPromocional" />
+        <activity
+            android:name=".Pedidoorcamentoum"
+            android:label="@string/title_activity_pedidoorcamentoum"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentodois"
+            android:label="@string/title_activity_pedido_orcamentodois"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentotres"
+            android:label="@string/title_activity_pedido_orcamentotres"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoquatro"
+            android:label="@string/title_activity_pedido_orcamentoquatro"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentocinco"
+            android:label="@string/title_activity_pedido_orcamentocinco"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoseis"
+            android:label="@string/title_activity_pedido_orcamentoseis"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentosete"
+            android:label="@string/title_activity_pedido_orcamentosete"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoEletricistaum"
+            android:label="@string/title_activity_pedido_orcamento_eletricistaum"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoEltricistadois"
+            android:label="@string/title_activity_pedido_orcamento_eltricistadois"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoEncanadorUm"
+            android:label="@string/title_activity_pedido_orcamento_encanador_um"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoEncanadorDois"
+            android:label="@string/title_activity_pedido_orcamento_encanador_dois"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoClimatizacaoUm"
+            android:label="@string/title_activity_pedido_orcamento_climatizacao_um"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoClimatizacaoDois"
+            android:label="@string/title_activity_pedido_orcamento_climatizacao_dois"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoClimatizacaoTres"
+            android:label="@string/title_activity_pedido_orcamento_climatizacao_tres"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoClimatizacaoQuatro"
+            android:label="@string/title_activity_pedido_orcamento_climatizacao_quatro"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoReformaUm"
+            android:label="@string/title_activity_pedido_orcamento_reforma_um"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoReformaDois"
+            android:label="@string/title_activity_pedido_orcamento_reforma_dois"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoReformaTres"
+            android:label="@string/title_activity_pedido_orcamento_reforma_tres"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoFim"
+            android:label="@string/title_activity_pedido_orcamento_fim"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ProfVerificados"
+            android:label="@string/title_activity_prof_verificados"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".OrcamentoCompleto"
+            android:label="@string/title_activity_orcamento_completo"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PedidoOrcamentoClimatizacaoCinco"
+            android:label="@string/title_activity_pedido_orcamento_climatizacao_cinco"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

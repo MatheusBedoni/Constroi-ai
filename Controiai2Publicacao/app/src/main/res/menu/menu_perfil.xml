@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_fale"
+        android:orderInCategory="100"
+        android:title="Fale conosco"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_dicas"
+        android:orderInCategory="100"
+        android:title="Dicas de segurança"
+        app:showAsAction="never" />
+    <item
+    android:id="@+id/action_termos"
+    android:orderInCategory="100"
+    android:title="Termos de uso"
+    app:showAsAction="never" />
+    <item
+    android:id="@+id/action_configuracoes"
+    android:orderInCategory="100"
+    android:title="Configurações"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sair"
+        android:orderInCategory="100"
+        android:title="Sair"
+        app:showAsAction="never" />
+
+
+
+
+</menu>

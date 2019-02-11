@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/rel1"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="É muito importante que voce envie fotos de seus trabalhos anteriores, para você receber ligaçoes e mensagens. Você pode enviar até quatro fotos."
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/placeholde"
+                android:clickable="true"
+                android:layout_marginRight="2dp"
+                android:onClick="setFoto1"
+                android:layout_weight="1"
+                android:id="@+id/ivProfissaoFoto1"
+                android:layout_below="@+id/textView"
+                />
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:onClick="setFoto2"
+                android:src="@drawable/placeholde"
+                android:id="@+id/ivProfissaoFoto2"
+                android:layout_alignTop="@+id/ivProfissaoFoto1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="3"
+            android:layout_marginTop="3dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:onClick="setFoto3"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/placeholde"
+                android:id="@+id/ivProfissaoFoto3"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:onClick="setFoto4"
+                android:src="@drawable/placeholde"
+                android:id="@+id/ivProfissaoFoto4"
+                />
+        </LinearLayout>
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2383249025819861/5417935456">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/rel2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sua imagem esta sendo enviada..."
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+
+            android:layout_below="@+id/progressBar2"
+           />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar2"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/rel3"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sua imagem esta sendo enviada..."
+            android:id="@+id/teste1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+
+            android:layout_below="@+id/progressBar2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sua imagem esta sendo enviada..."
+            android:id="@+id/teste2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:layout_below="@+id/progressBar2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sua imagem esta sendo enviada..."
+            android:id="@+id/teste3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:layout_below="@+id/progressBar2"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

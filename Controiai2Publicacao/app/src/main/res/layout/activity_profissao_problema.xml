@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#ffffff">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main"
+        android:layout_height= "wrap_content"
+        android:elevation= "4dp"
+        android:theme = "@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width = "match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentLeft = "true"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Theme.AppCompat.Light" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nós não conseguimos encontrar sua profissão, por favor informe novamente."
+            android:textColor="@color/colorPrimarytext"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/texto" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Obs: Você pode escolher até três profissões"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimarytext"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/texto2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimarytext"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Dica: A profissão principal será a profissão na qual você será encontrado por outros contratantes, nós indicamos que seja a profissão que você tenha mais experiência."
+                android:textSize="16dp"
+                android:id="@+id/texto3"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/texto"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Profissão principal"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimarytext"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/pri" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:entries="@array/profissionais_arrays"
+                android:prompt="@string/country_prompt" />
+            <View
+                android:id = "@+id/vw_divider11"
+                android:layout_width="match_parent"
+                android:layout_height="0.20dp"
+                android:background="#e0dddd"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/button_confira"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Segunda profissão"
+                android:textColor="@color/colorPrimarytext"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/seg" />
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/profissionais_arrays"
+                android:prompt="@string/country_prompt2" />
+            <View
+                android:id = "@+id/vw_divider12"
+                android:layout_width="match_parent"
+                android:layout_height="0.20dp"
+                android:background="#e0dddd"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/button_confira"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Terceira profissão"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimarytext"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ter" />
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/profissionais_arrays"
+                android:prompt="@string/country_prompt3" />
+
+        <!--<CheckBox android:id="@+id/checkbox_arquiteto"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Arquiteto"-->
+            <!--android:onClick="onCheckboxClicked"-->
+            <!--android:layout_below="@+id/checkbox_carpinteiro"-->
+            <!--android:layout_alignRight="@+id/checkbox_eletricista"-->
+            <!--android:layout_alignEnd="@+id/checkbox_eletricista"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+        <!--<CheckBox android:id="@+id/checkbox_carpinteiro"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Carpinteiro"-->
+            <!--android:onClick="onCheckboxClicked"-->
+            <!--android:layout_below="@+id/checkbox_engenheiro"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+        <!--<CheckBox android:id="@+id/checkbox_engenheiro"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Engenheiro civil"-->
+            <!--android:onClick="onCheckboxClicked"-->
+            <!--android:layout_below="@+id/checkbox_eletricista"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+        <!--<CheckBox android:id="@+id/checkbox_eletricista"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Eletricista"-->
+            <!--android:onClick="onCheckboxClicked"-->
+            <!--android:layout_below="@+id/checkbox_pintor"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+        <!--<CheckBox android:id="@+id/checkbox_pintor"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Pintor"-->
+            <!--android:onClick="onCheckboxClicked"-->
+            <!--android:layout_below="@+id/checkbox_pedreiro"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+        <!--<CheckBox android:id="@+id/checkbox_pedreiro"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Pedreiro"-->
+            <!--android:onClick="onCheckboxClicked"-->
+            <!--android:layout_below="@+id/texto2"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+        <!--<CheckBox android:id="@+id/checkbox_encanador"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Encanador"-->
+            <!--android:onClick="onCheckboxClicked"-->
+            <!--android:layout_below="@+id/checkbox_pintor"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+        <!--<CheckBox android:id="@+id/checkbox_vidraceiro"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Vidraceiro"-->
+            <!--android:onClick="onCheckboxClicked"-->
+            <!--android:layout_below="@+id/checkbox_pedreiro"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+        <!--<CheckBox android:id="@+id/checkbox_funileiro"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Funileiro"-->
+            <!--android:onClick="onCheckboxClicked"-->
+            <!--android:layout_below="@+id/texto2"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentStart="true" />-->
+            <!--<CheckBox android:id="@+id/checkbox_serrelheiro"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Serralheiro de ferro"-->
+                <!--android:onClick="onCheckboxClicked"-->
+                <!--android:layout_below="@+id/texto2"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true" />-->
+            <!--<CheckBox android:id="@+id/checkbox_mestre"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Mestre de obras"-->
+                <!--android:onClick="onCheckboxClicked"-->
+                <!--android:layout_below="@+id/texto2"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true" />-->
+            <!--<CheckBox android:id="@+id/checkbox_serralheiro"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Gesseiro"-->
+                <!--android:onClick="onCheckboxClicked"-->
+                <!--android:layout_below="@+id/texto2"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true" />-->
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/caa"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:text="CANCELAR REGISTRO"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:onClick="cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_negativo"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:text="CADASTRAR"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="salvar"
+            android:id="@+id/button_descr"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/termos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/background"
+        android:onClick="fechar"
+        android:visibility="gone">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:onClick="fechar"
+            android:visibility="visible"
+            android:layout_gravity="left|center_vertical">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/corbranca"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/logo_app"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:id="@+id/imageView" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Seu cadastro esta praticamente terminado, antes recomendamos que você leia nossos termos de uso, ao clicar em começar você concorda com os nossos "
+                    android:textColor="@color/colorPrimarytext"
+                    android:id="@+id/texto7"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="termos de uso"
+                    android:id="@+id/texto10"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:onClick="termo"
+                    android:textColor="@color/coloLink"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <Button
+                        android:text="CANCELAR REGISTRO"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cancel_cadastro"
+                        android:layout_gravity="bottom"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                    <Button
+                        android:text="COMEÇAR"
+                        style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_weight="3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/comecar_cadastro"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>
